@@ -7,10 +7,96 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="frontend/style.css" />
 </head>
+
+
 <body>
 
-  <main> 
-      <h1> hello worlds </h1>
+  <main>
+    <!-- Tab Toggle Button -->
+    <button class="tab-toggle" id="tabToggle">+</button>
+    
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <!-- Tab Navigation -->
+    <nav class="tab-navigation" id="tabNavigation">
+      <button class="tab-button active" data-tab="home">Home</button>
+      <button class="tab-button" data-tab="resume">Resume</button>
+      <button class="tab-button" data-tab="projects">Projects</button>
+      <button class="tab-button" data-tab="contact">Contact</button>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- Home Tab -->
+      <div class="tab-panel active" id="home">
+        <div class="header-container">
+          <button id="reveal-button">
+            <span>W</span><span>h</span><span>o</span><span> </span><span>a</span><span>m</span><span> </span><span>I</span><span>?</span>
+          </button>
+        </div>
+        <div class="hide-content" id="hiddenContent">
+          <p>howdy! My name is Sam Khudairi.</p>
+        </div>
+      </div>
+
+      <!-- Resume Tab -->
+      <div class="tab-panel" id="resume">
+        <div class="content-container">
+          <h2>Resume</h2>
+          <div class="resume-content">
+            <section class="resume-section">
+              <h3>Experience</h3>
+              <p>Your work experience will go here...</p>
+            </section>
+            <section class="resume-section">
+              <h3>Education</h3>
+              <p>Your education details will go here...</p>
+            </section>
+            <section class="resume-section">
+              <h3>Skills</h3>
+              <p>Your skills will go here...</p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Tab -->
+      <div class="tab-panel" id="projects">
+        <div class="content-container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>Project 1</h3>
+              <p>Description of your first project...</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 2</h3>
+              <p>Description of your second project...</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 3</h3>
+              <p>Description of your third project...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Tab -->
+      <div class="tab-panel" id="contact">
+        <div class="content-container">
+          <h2>Contact</h2>
+          <div class="contact-content">
+            <p>Get in touch with me!</p>
+            <div class="contact-info">
+              <p>Email: your.email@example.com</p>
+              <p>Phone: (555) 123-4567</p>
+              <p>LinkedIn: linkedin.com/in/yourprofile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
  
@@ -19,4 +105,9 @@
 
   <script src="frontend/script.js"></script>
 </body>
+
+
+
+
+
 </html>
